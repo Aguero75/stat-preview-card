@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    Font-size: 15px;
+    height: 100vh;
+    background-color: hsl(233, 47%, 7%);
+    color: hsl(0, 0%,100%);
+    display: flex;
+    font-family: 'Lexend Deca', sans-serif;
+
+
+}
+
+
+
+
+.container{
+    max-width: 650px;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.content{
+    width: 50%;
+    font-size: .8rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    background-color: hsl(244, 38%, 16%);
+}
+
+.content h1{
+    font-family: 'Inter', sans-serif;
+    color: hsl(0,0%,100%);
+}
+
+.content span{
+    color: hsl(277, 64%, 61%);
+}
+
+.content p{
+    color: hsla(0, 0%, 100%, 0.75);
+    opacity: .8;
+}
+
+.sub-content{
+    display: flex;
+    justify-content: space-between;
+    font-size: .6rem;
+    
+    
+}
+
+.sub-content p{
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.sub-content h2 {
+ 
+    text-transform: uppercase;
+    margin: .3rem;
+}
+
+
+.image{
+    width: 50%;
+    background-color: hsl(277, 64%, 61%);
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+}
+
+
+@media screen and (max-width: 500px) {
+   
+
+   
+    .container{
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: hidden;
+    text-align: center;
+    max-width: 100%;
+    margin: .6rem;
+    border-radius: 8px;
+  
+    
+    
+  }
+   
+
+   .image img{
+  
+    height: fit-content;
+    background-image: url(./images/image-header-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    height: 50%;
+    
+   }
+
+   .sub-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+   .content{
+    padding: 0px;
+    box-sizing: border-box;
+    padding: 15px;
+    height: 50%;
+   }
+
+
+
+   
+}
+
